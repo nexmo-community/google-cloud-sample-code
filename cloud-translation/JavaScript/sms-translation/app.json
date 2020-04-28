@@ -1,0 +1,23 @@
+{
+  "name": "SMS Translation with Nexmo & Google Cloud Translation API",
+  "description": "Example using Google Cloud Translation API to translate SMS messages.",
+  "keywords": ["translation", "sms", "nodejs", "Google Cloud Translation", "nexmo"],
+  "website": "",
+  "repository": "https://github.com/nexmo-community/sms-translate-google-js",
+  "env": {
+    "GOOGLE_CLIENT_EMAIL": {
+      "description": "The client_email property from your google_creds.json file.",
+      "value": "service_account_name@project.iam.gserviceaccount.com",
+      "required" : true
+    },
+    "GOOGLE_PRIVATE_KEY": {
+      "description": "The private_key property from your google_creds.json file. Make sure to copy and paste everything here.",
+      "value": "-----BEGIN PRIVATE KEY-----",
+      "required" : true
+    },
+    "TARGET_LANGUAGE": {
+      "description": "The language incoming text will be translated into.",
+      "value": "en",
+      "required" : false
+    }
+  }
