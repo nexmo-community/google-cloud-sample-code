@@ -34,7 +34,7 @@ overview
 1. Run `firebase deploy --only functions`
     1. Copy the function route - `https://[LOCATION]-[YOUR-PROJECT-ID].cloudfunctions.net/inboundSMS`
 
-### Linking the app to Nexmo
+### Linking the app to Vonage
 
 Update your virtual number with the URL of the hosted or local server.
 
