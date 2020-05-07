@@ -54,21 +54,7 @@ This will install all the dependencies and run it at http://localhost:3000.
 
 ## Linking the app to Nexmo
 
-For this example app a Nexmo number and SMS webhook setup is needed.
-
-This can be achieved with the Nexmo CLI. Install the CLI by following [these instructions](https://github.com/Nexmo/nexmo-cli#installation).
-
-### Rent a New Virtual Number
-
-Renting a number will need to be in place. This can also be achieved using the CLI by running this command:
-
-```
-nexmo number:buy --country_code US
-```
-
-### Adding the SMS Webhook
-
-Update the number created with the URL of the hosted or local server.
+Update your virtual number with the URL of the hosted or local server.
 
 ```
 nexmo link:sms phone_number https://my-hostname/message

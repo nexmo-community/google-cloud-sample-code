@@ -27,7 +27,7 @@ You will need to create a new Nexmo application in order to work with this app:
 
 #### Create a Nexmo Application Using the Command Line Interface
 
-Install the CLI by following [these instructions](https://github.com/Nexmo/nexmo-cli#installation). Then create a new Nexmo application that also sets up your `answer_url` and `event_url` for the app running locally on your machine.
+Create a new Vonage API application with the `answer_url` and `event_url` from the app running locally or hosted.
 
 ```
 nexmo app:create google-speech-to-text http://<your_hostname>/ncco http://<your_hostname>/event
@@ -35,15 +35,8 @@ nexmo app:create google-speech-to-text http://<your_hostname>/ncco http://<your_
 
 This will return an application ID. Make a note of it.
 
-#### Buy a New Virtual Number
-If you don't have a number already in place, you will need to buy one. This can also be achieved using the CLI by running this command:
-
-```
-nexmo number:buy
-```
-
 #### Link the Virtual Number to the Application
-Finally, link your new number to the application you created by running:
+Finally, link your Vonage number to the application you created by running:
 
 ```
 nexmo link:app YOUR_NUMBER YOUR_APPLICATION_ID
