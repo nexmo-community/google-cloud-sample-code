@@ -1,23 +1,8 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const Nexmo = require('nexmo');
+const nexmo = require('../nexmo-conifg');
 
 let db = admin.firestore();
-
-const {
-  api_key,
-  api_secret,
-  private_key,
-  application_id
-} = functions.config().nexmo;
-
-// Initialize Nexmo with application credentials
-const nexmo = new Nexmo({
-  apiKey: api_key,
-  apiSecret: api_secret,
-  applicationId: application_id,
-  privateKey: private_key
-});
 
 function verifyCheck(opts) {
   return new Promise((resolve, reject) => {
