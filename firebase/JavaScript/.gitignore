@@ -68,3 +68,4 @@ node_modules/
 
 # Nexmo private key
 private.key
+.code-workspace
