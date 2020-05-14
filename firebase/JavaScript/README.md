@@ -1,4 +1,6 @@
-# Nexmo SMS with Firebase Functions
+# Vonage API Firebase Function Examples
+
+This
 
 This example sends and receives Vonage API SMS with Firebase Functions.  Inbound SMS messages use a webhook on Firebase to add the message to the Firebase Realtime Database. Upon creation, a triggered function will echo back the original text to the phone number.
 
